@@ -19,7 +19,7 @@ const values = [
   }
 ];
 
-export function About() {
+export default function About() {
   return (
     <section id="about" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -27,12 +27,13 @@ export function About() {
           <div className="order-2 lg:order-1">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1642522029691-029b5a432954?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMG1lZXRpbmclMjBwcm9mZXNzaW9uYWx8ZW58MXx8fHwxNzYxMDIxNDk1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="https://images.unsplash.com/photo-1642522029691-029b5a432954?auto=format&q=80&w=1200"
                 alt="Professional business meeting"
                 className="w-full h-full object-cover"
               />
             </div>
           </div>
+
           <div className="order-1 lg:order-2">
             <div className="inline-block px-4 py-2 bg-red-100 rounded-full mb-4">
               <span className="text-primary">About Us</span>
@@ -41,15 +42,14 @@ export function About() {
               Your Trusted Financial Partner
             </h2>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              RedFire CPA LLC was founded with a simple mission: to provide exceptional 
-              accounting services with a personal touch. We believe that every client 
-              deserves individualized attention and strategic financial guidance.
+              RedFire CPA LLC was founded with a simple mission: to provide exceptional accounting services with a
+              personal touch. We believe that every client deserves individualized attention and strategic guidance.
             </p>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              Our team of certified public accountants brings decades of combined experience 
-              across various industries, ensuring that we can handle any financial challenge 
-              your business faces with expertise and precision.
+              Our team brings decades of combined experience across various industries, ensuring that we can handle
+              any financial challenge your business faces with expertise and precision.
             </p>
+
             <div className="grid grid-cols-3 gap-6 pt-6 border-t border-slate-200">
               <div>
                 <div className="text-3xl md:text-4xl text-primary mb-1">25+</div>
@@ -68,10 +68,10 @@ export function About() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {values.map((value, index) => {
+          {values.map((value, i) => {
             const Icon = value.icon;
             return (
-              <div key={index} className="text-center">
+              <div key={i} className="text-center">
                 <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-4 mx-auto">
                   <Icon className="w-8 h-8 text-primary" />
                 </div>

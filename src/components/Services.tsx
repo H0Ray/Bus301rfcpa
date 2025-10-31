@@ -35,7 +35,7 @@ const services = [
   }
 ];
 
-export function Services() {
+export default function Services() {
   const scrollToContact = () => {
     const element = document.getElementById("contact");
     if (element) {

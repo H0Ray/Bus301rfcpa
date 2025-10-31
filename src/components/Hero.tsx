@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
-export function Hero() {
+export default function Hero() {
   const scrollToContact = () => {
     const element = document.getElementById("contact");
     if (element) {

@@ -54,7 +54,7 @@ const insights = [
   }
 ];
 
-export function Insights() {
+export default function Insights() {
   return (
     <section id="insights" className="py-16 md:py-24 bg-slate-50">
       <div className="container mx-auto px-4">

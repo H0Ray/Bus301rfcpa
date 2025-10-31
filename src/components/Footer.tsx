@@ -1,7 +1,7 @@
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
-import logo from "figma:asset/63b93e8a190ac212ad107fd88a94b580ce699ad0.png";
+import logo from "../assets/pic.webp";
 
-export function Footer() {
+export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const scrollToSection = (id: string) => {

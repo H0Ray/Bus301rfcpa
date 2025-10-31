@@ -41,7 +41,7 @@ const teamMembers = [
   }
 ];
 
-export function Team() {
+export default function Team() {
   return (
     <section id="team" className="py-16 md:py-24 bg-slate-50">
       <div className="container mx-auto px-4">

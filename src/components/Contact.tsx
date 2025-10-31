@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { useState } from "react";
 
-export function Contact() {
+export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",

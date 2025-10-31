@@ -24,7 +24,7 @@ const reasons = [
   }
 ];
 
-export function Mission() {
+export default function Mission() {
   return (
     <section className="py-16 md:py-24 bg-gradient-to-b from-white to-red-50/50">
       <div className="container mx-auto px-4">

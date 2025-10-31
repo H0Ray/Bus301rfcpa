@@ -27,7 +27,7 @@ const features = [
   }
 ];
 
-export function ClientPortal() {
+export default function ClientPortal() {
   const [loginData, setLoginData] = useState({
     email: "",
     password: ""
